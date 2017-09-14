@@ -12,7 +12,7 @@ def risky(criteria):
             numb = random.randrange(1, numResults, 1)
             item = first_few_results[numb]
             result = item.content_url
-            return result
+            return result + " " + creds.ms + " " + creds.client_id + " " creds.client_secret
         else:
             item = first_few_results[1]
             result = item.content_url
